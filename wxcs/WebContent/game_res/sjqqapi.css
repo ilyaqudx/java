@@ -1,0 +1,120 @@
+#qqappextcontainer {
+	OVERFLOW: hidden; HEIGHT: 1px; POSITION: absolute
+}
+.sjqqapi_popwin {
+	FONT-SIZE: 12px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjbg.png); POSITION: absolute; COLOR: #666; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 50%; MARGIN: 0px 0px 0px -220px; Z-INDEX: 9999; DISPLAY: none; PADDING-RIGHT: 0px; WIDTH: 440px; _background: #e5e5e5
+}
+.sjqqapi_popwin .innner {
+	BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid; BORDER-BOTTOM: #bbbbbb 1px solid; POSITION: relative; MARGIN: 5px; BORDER-LEFT: #bbbbbb 1px solid; WIDTH: 428px
+}
+.sjqqapi_popwin .sjqqapi_head {
+	OVERFLOW: hidden; HEIGHT: 30px; BACKGROUND: #78aadb; FONT-WEIGHT: bold; COLOR: #ffffff; LINE-HEIGHT: 30px; WIDTH: 100%
+}
+.sjqqapi_popwin .sjqqapi_close {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; FONT-SIZE: 0px; BORDER-LEFT-STYLE: none; HEIGHT: 10px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat 0px -148px; RIGHT: 12px; BORDER-BOTTOM-STYLE: none; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; Z-INDEX: 9999; DISPLAY: block; TOP: 10px; PADDING-RIGHT: 0px; WIDTH: 10px
+}
+.sjqqapi_popwin .sjqqapi_content {
+	OVERFLOW: hidden; HEIGHT: 225px; BACKGROUND: #ffffff; BORDER-BOTTOM: #dedede 1px solid; POSITION: relative; WIDTH: 100%
+}
+.sjqqapi_popwin .clear {
+	CLEAR: both
+}
+.sjqqapi_popwin .sjqqapi_content .sjqqapi_con {
+	HEIGHT: 84px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat 15px 0px; FLOAT: left; MARGIN: 0px 0px 0px 30px; _display: inline
+}
+.sjqqapi_em {
+	OVERFLOW: hidden; FONT-SIZE: 14px; COLOR: #333333; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 180px; DISPLAY: block; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px; WIDTH: 16em
+}
+.siqqapi_em_color {
+	FONT-WEIGHT: bold; COLOR: #527e3e
+}
+.sjqqapi_downloadapp {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; FONT-SIZE: 0px; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat 0px -104px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 10px 0px 0px 210px; PADDING-RIGHT: 0px; WIDTH: 130px
+}
+.sjqqapi_downloadapphover {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; FONT-SIZE: 0px; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -141px -104px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 10px 0px 0px 210px; PADDING-RIGHT: 0px; WIDTH: 130px
+}
+.sjqqapi_downloadappclick {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; FONT-SIZE: 0px; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -281px -104px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 10px 0px 0px 210px; PADDING-RIGHT: 0px; WIDTH: 130px
+}
+.sjqqapi_downloadappdisable {
+	BORDER-TOP-STYLE: none; CURSOR: auto; FONT-SIZE: 0px; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -420px -104px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 10px 0px 0px 210px; PADDING-RIGHT: 0px; WIDTH: 130px
+}
+.sjqqapi_checkbox {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; BORDER-LEFT-STYLE: none; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -138px -241px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; WIDTH: 16px; heigth: 16px
+}
+.sjqqapi_checkboxclick {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; BORDER-LEFT-STYLE: none; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -154px -241px; BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; WIDTH: 16px; heigth: 16px
+}
+.sjqqapi_xyapp {
+	BORDER-TOP-STYLE: none; CURSOR: pointer; FONT-SIZE: 12px; BORDER-LEFT-STYLE: none; HEIGHT: 16px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; MARGIN: 10px 0px 0px 210px; WIDTH: 140px
+}
+.sjqqapi_foot {
+	HEIGHT: 40px; BACKGROUND: #fafafa; POSITION: relative; LINE-HEIGHT: 40px; WIDTH: 100%
+}
+.sjqqapi_tp {
+	WHITE-SPACE: nowrap; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; TEXT-INDENT: 30px
+}
+.sjqqapi_next {
+	CURSOR: pointer; FONT-SIZE: 14px; HEIGHT: 29px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat 0px -167px; RIGHT: 10px; POSITION: absolute; FONT-WEIGHT: bold; COLOR: #333333; TEXT-ALIGN: center; LINE-HEIGHT: 29px; TOP: 6px; WIDTH: 90px
+}
+.sjqqapi_nexthover {
+	CURSOR: pointer; FONT-SIZE: 14px; HEIGHT: 29px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -116px -167px; RIGHT: 10px; POSITION: absolute; FONT-WEIGHT: bold; COLOR: #333333; TEXT-ALIGN: center; LINE-HEIGHT: 29px; TOP: 6px; WIDTH: 90px
+}
+.sjqqapi_nextclick {
+	CURSOR: pointer; FONT-SIZE: 14px; HEIGHT: 29px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat -234px -167px; RIGHT: 10px; POSITION: absolute; FONT-WEIGHT: bold; COLOR: #333333; TEXT-ALIGN: center; LINE-HEIGHT: 29px; TOP: 6px; WIDTH: 90px
+}
+.sjqqapi_icon {
+	HEIGHT: 40px; POSITION: absolute; LEFT: 45px; TOP: 82px; WIDTH: 40px
+}
+.sjqqapi_tip {
+	FONT-SIZE: 14px; COLOR: #333333; PADDING-BOTTOM: 0px; PADDING-TOP: 24px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 40px; _padding: 23px 0 0 0
+}
+.sjqqapi_st {
+	OVERFLOW: hidden; FONT-SIZE: 0px; HEIGHT: 11px; BACKGROUND: url(http://resource.app.qq.com/api/images/sj.gif) no-repeat; FLOAT: left; MARGIN-LEFT: 28px; MARGIN-TOP: 27px; DISPLAY: block; WIDTH: 164px; MARGIN-RIGHT: 28px
+}
+.sjqqapi_sj {
+	HEIGHT: 66px; BACKGROUND: url(http://resource.app.qq.com/api/images/sjqq_sprite.png) no-repeat 0px -214px; FLOAT: left; DISPLAY: block; WIDTH: 42px
+}
+.sjqqapi_head_title_s {
+	OVERFLOW: hidden; MAX-WIDTH: 170px; HEIGHT: 30px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; WORD-BREAK: keep-all; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; TEXT-INDENT: 0px
+}
+.sjqqapi_head_install {
+	FLOAT: left; DISPLAY: block; TEXT-INDENT: 10px
+}
+.sjqqapiti0 {
+	TEXT-INDENT: 0px
+}
+.sjqqapi_iconimg {
+	HEIGHT: 50px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 7px 0px 0px 47px; DISPLAY: block; PADDING-RIGHT: 0px; WIDTH: 50px; _display: inline
+}
+.sjqqapi_c {
+	PADDING-TOP: 8px
+}
+.sjqqapi_popwin .lh30 {
+	LINE-HEIGHT: 30px
+}
+.sjqqapi_popwin .pt10 {
+	PADDING-TOP: 10px
+}
+.sjqqapi_popwin .pt20 {
+	PADDING-TOP: 20px
+}
+.sjqqapi_popwin .pb20 {
+	PADDING-BOTTOM: 20px
+}
+.sjqqapi_popwin .pt30 {
+	PADDING-TOP: 30px
+}
+.sjqqapi_popwin .pt35 {
+	PADDING-TOP: 35px
+}
+.sjqqapi_popwin .fs14 {
+	FONT-SIZE: 14px
+}
+.sjqqapi_popwin #dckb {
+	FLOAT: left; DISPLAY: block
+}
+.c1071bb {
+	CURSOR: pointer; COLOR: #1071bb
+}

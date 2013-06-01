@@ -1,0 +1,132 @@
+.jmodal-overlay {
+	RIGHT: 0px; POSITION: absolute; LEFT: 100px; Z-INDEX: 200; DISPLAY: none; TOP: 100px; BOTTOM: 0px; BACKGROUND-COLOR: #888888
+}
+.jmodal-main {
+	OVERFLOW: visible; FONT-SIZE: 12px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; MARGIN: 0px; Z-INDEX: 999; TOP: 0px; PADDING-RIGHT: 0px
+}
+.jmodal-main TABLE {
+	WIDTH: 400px
+}
+.jmodal-main A.close {
+	CURSOR: pointer; HEIGHT: 16px; BACKGROUND: url(../images/jmodal/dialog_close.png) no-repeat 0px 0px; RIGHT: 15px; POSITION: absolute; Z-INDEX: 300; DISPLAY: block; TOP: 15px; WIDTH: 16px
+}
+.jmodal-main .jmodal-top {
+	OVERFLOW: hidden; FONT-SIZE: 0px; HEIGHT: 10px; LINE-HEIGHT: 0
+}
+.jmodal-main .jmodal-top-left {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_top_left.png) no-repeat center bottom; WIDTH: 10px; _background: url("../images/jmodal/dialog_top_left.gif") no-repeat scroll center bottom transparent
+}
+.jmodal-main .jmodal-top-right {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_top_right.png) no-repeat center bottom; WIDTH: 10px; _background: url("../images/jmodal/dialog_top_right.gif") no-repeat scroll center bottom transparent
+}
+.jmodal-main .jmodal-border-top {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_border.png) repeat-x center bottom; _background: url("../images/jmodal/dialog_border.gif") repeat-x scroll center bottom transparent
+}
+.jmodal-main .jmodal-middle {
+	HEIGHT: auto; WIDTH: 400px
+}
+.jmodal-main .jmodal-border-left {
+	BACKGROUND: url(../images/jmodal/dialog_border.png) repeat-y right bottom; WIDTH: 10px; _background: url("../images/jmodal/dialog_border.gif") repeat-y scroll right bottom transparent
+}
+.jmodal-main .jmodal-border-right {
+	BACKGROUND: url(../images/jmodal/dialog_border.png) repeat-y left bottom; WIDTH: 10px; _background: url("../images/jmodal/dialog_border.gif") repeat-y scroll left bottom transparent
+}
+.jmodal-main .jmodal-middle-content {
+	WIDTH: 380px
+}
+.jmodal-main .jmodal-title {
+	FONT-SIZE: 14px; HEIGHT: 32px; BACKGROUND: url(../images/jmodal/dialog_title.png) 0px 0px; FONT-WEIGHT: bold; COLOR: #ffffff; LINE-HEIGHT: 32px; TEXT-INDENT: 10px
+}
+.jmodal-main .jmodal-content {
+	HEIGHT: auto; BORDER-RIGHT: #868686 1px solid; BORDER-BOTTOM: #bebebe 1px solid; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; MARGIN: 0px; BORDER-LEFT: #868686 1px solid; LINE-HEIGHT: 20px; PADDING-RIGHT: 10px; BACKGROUND-COLOR: #ffffff
+}
+.jmodal-main .jmodal-content IMG {
+	MARGIN-RIGHT: 5px
+}
+.jmodal-main .jmodal-content P {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 25px; PADDING-RIGHT: 0px
+}
+.redblock {
+	HEIGHT: 15px; FLOAT: left; WIDTH: 40px; MARGIN-RIGHT: 10px
+}
+.blueblock {
+	HEIGHT: 15px; FLOAT: left; WIDTH: 40px; MARGIN-RIGHT: 10px
+}
+.greenblock {
+	HEIGHT: 15px; FLOAT: left; WIDTH: 40px; MARGIN-RIGHT: 10px
+}
+.redblock {
+	BACKGROUND-COLOR: #be0000
+}
+.blueblock {
+	BACKGROUND-COLOR: #0074e4
+}
+.greenblock {
+	BACKGROUND-COLOR: #3da300
+}
+.clear {
+	FONT-SIZE: 0px; CLEAR: both; LINE-HEIGHT: 0
+}
+.jmodal-main .jmodal-content .textarea {
+	OVERFLOW: hidden; FONT-SIZE: 12px; BORDER-TOP: #809db9 1px solid; HEIGHT: 90px; BORDER-RIGHT: #809db9 1px solid; BORDER-BOTTOM: #809db9 1px solid; COLOR: #868686; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 3px; BORDER-LEFT: #809db9 1px solid; LINE-HEIGHT: 23px; PADDING-RIGHT: 3px; WIDTH: 350px
+}
+.jmodal-main .jmodal-content .smallinput {
+	OVERFLOW: hidden; FONT-SIZE: 12px; BORDER-TOP: #809db9 1px solid; HEIGHT: 20px; BORDER-RIGHT: #809db9 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #809db9 1px solid; COLOR: #868686; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 3px; BORDER-LEFT: #809db9 1px solid; LINE-HEIGHT: 20px; PADDING-RIGHT: 3px; WIDTH: 50px
+}
+.jmodal-main .jmodal-content .item {
+	BORDER-TOP: #dcdcdc 1px solid; VERTICAL-ALIGN: middle; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 0px; MARGIN: 5px 0px; DISPLAY: inline-table; LINE-HEIGHT: 35px; PADDING-RIGHT: 0px; WIDTH: 100%
+}
+.jmodal-main .jmodal-content .user {
+	HEIGHT: 22px; VERTICAL-ALIGN: middle; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 5px 0px; DISPLAY: inline-table; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px; WIDTH: 100%
+}
+.jmodal-main .jmodal-content .user .left {
+	FONT-SIZE: 12px; HEIGHT: 22px; FLOAT: left; TEXT-ALIGN: right; WIDTH: 70px
+}
+.left40 {
+	FONT-SIZE: 12px; HEIGHT: 22px; FLOAT: left; TEXT-ALIGN: right; WIDTH: 50px
+}
+.jmodal-main .jmodal-content .user .input {
+	OVERFLOW: hidden; FONT-SIZE: 12px; BORDER-TOP: #809db9 1px solid; HEIGHT: 20px; BORDER-RIGHT: #809db9 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #809db9 1px solid; FLOAT: left; COLOR: #868686; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 3px; MARGIN: 0px 5px; BORDER-LEFT: #809db9 1px solid; LINE-HEIGHT: 20px; PADDING-RIGHT: 3px; WIDTH: 140px
+}
+.jmodal-main .jmodal-content .user A.forgot {
+	COLOR: #666666; TEXT-DECORATION: none; PADDING-RIGHT: 5px
+}
+.jmodal-main .jmodal-content .user A.signnew {
+	COLOR: #2c7d08; TEXT-DECORATION: none; PADDING-RIGHT: 5px
+}
+.jmodal-main .jmodal-opts {
+	BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #868686 1px solid; BORDER-BOTTOM: #868686 1px solid; PADDING-BOTTOM: 8px; TEXT-ALIGN: center; PADDING-TOP: 8px; PADDING-LEFT: 5px; BORDER-LEFT: #868686 1px solid; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #ebf3f7
+}
+.jmodal-main .jmodal-opts .submit {
+	CURSOR: pointer; FONT-SIZE: 13px; BORDER-TOP: medium none; HEIGHT: 31px; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; COLOR: #fff; TEXT-ALIGN: center; MARGIN: 0px 15px; BORDER-LEFT: medium none; LINE-HEIGHT: 30px; WIDTH: 90px
+}
+.jmodal-main .jmodal-opts .cancel {
+	CURSOR: pointer; FONT-SIZE: 13px; BORDER-TOP: medium none; HEIGHT: 31px; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; COLOR: #fff; TEXT-ALIGN: center; MARGIN: 0px 15px; BORDER-LEFT: medium none; LINE-HEIGHT: 30px; WIDTH: 90px
+}
+.jmodal-main .jmodal-opts .submit {
+	BACKGROUND: url(../images/jmodal/dialog_submit.gif) #347fd2 no-repeat 0px 0px
+}
+.jmodal-main .jmodal-opts .submit:hover {
+	BACKGROUND: url(../images/jmodal/dialog_submit_hover.gif) #347fd2 no-repeat 0px 0px
+}
+.jmodal-main .jmodal-opts .cancel {
+	BACKGROUND: url(../images/jmodal/dialog_button.png) no-repeat; COLOR: #607e8c
+}
+.jmodal-main .jmodal-opts .cancel:hover {
+	BACKGROUND: url(../images/jmodal/dialog_button_hover.gif) no-repeat; COLOR: #607e8c
+}
+.jmodal-main .jmodal-bottom {
+	OVERFLOW: hidden; FONT-SIZE: 10px; HEIGHT: 10px; LINE-HEIGHT: 10px
+}
+.jmodal-main .jmodal-border-bottom {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_border.png) repeat-x center top; _background: url("../images/jmodal/dialog_border.gif") repeat-x scroll center top transparent
+}
+.jmodal-main .jmodal-bottom-left {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_bottom_left.png) no-repeat center top; WIDTH: 10px; _background: url("../images/jmodal/dialog_bottom_left.gif") no-repeat scroll center top transparent
+}
+.jmodal-main .jmodal-bottom-right {
+	HEIGHT: 10px; BACKGROUND: url(../images/jmodal/dialog_bottom_right.png) no-repeat center top; WIDTH: 10px; _background: url("../images/jmodal/dialog_bottom_right.gif") no-repeat scroll center top transparent
+}
+.sinalogin {
+	CURSOR: hand; HEIGHT: 24px; BACKGROUND: url(../images/jmodal/weibo240.png) no-repeat; FLOAT: left; DISPLAY: block; WIDTH: 130px; _background: url("../images/jmodal/weibo240.png") no-repeat scroll
+}

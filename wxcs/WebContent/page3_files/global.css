@@ -1,0 +1,180 @@
+body {
+	background: url("../images/bg.jpg") repeat-x top; text-align: left; color: rgb(97, 97, 97); line-height: 200%; font-family: Arial,Helvetica,"Microsoft YaHei","ËÎÌו"; font-size: 14px;
+}
+body {
+	margin: 0px; padding: 0px; text-align: left;
+}
+form {
+	margin: 0px; padding: 0px; text-align: left;
+}
+ul {
+	margin: 0px; padding: 0px; text-align: left;
+}
+li {
+	margin: 0px; padding: 0px; text-align: left;
+}
+p {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h1 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h2 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h3 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h4 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h5 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+h6 {
+	margin: 0px; padding: 0px; text-align: left;
+}
+dl {
+	margin: 0px; padding: 0px; text-align: left;
+}
+dt {
+	margin: 0px; padding: 0px; text-align: left;
+}
+dd {
+	margin: 0px; padding: 0px; text-align: left;
+}
+table {
+	margin: 0px; padding: 0px; text-align: left;
+}
+fieldset {
+	margin: 0px; padding: 0px; text-align: left;
+}
+th {
+	margin: 0px; padding: 0px; text-align: left;
+}
+input {
+	font-size: 14px;
+}
+img {
+	border: 0px currentColor; vertical-align: middle;
+}
+em {
+	font-style: normal;
+}
+i {
+	font-style: normal;
+}
+ul {
+	list-style-type: none;
+}
+ol {
+	margin: 0px;
+}
+a {
+	color: rgb(16, 100, 186); text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.cl {
+	clear: both;
+}
+.rad5 {
+	border-radius: 5px;
+}
+.dis_none {
+	display: none;
+}
+.tc {
+	text-align: center;
+}
+.demo_main {
+	margin: 0px auto; width: 1000px; clear: both;
+}
+.demo_head {
+	background: rgb(254, 254, 254); margin: 5px 10px 0px 0px; padding: 10px; border: 1px solid rgb(212, 212, 212); font-size: 18px; font-weight: bold;
+}
+.demo_head span {
+	color: rgb(255, 0, 0);
+}
+.demo_left {
+	background: rgb(254, 254, 254); border: 1px solid rgb(212, 212, 212); width: 198px; padding-bottom: 20px; margin-top: 10px; float: left;
+}
+.demo_left_tit {
+	padding: 10px; font-size: 16px; font-weight: bold;
+}
+.menuTab {
+	
+}
+.menuTab p {
+	margin: 0px 5px; color: rgb(66, 92, 158); line-height: 36px; padding-left: 5px; font-size: 15px; font-weight: bold; border-top-color: rgb(212, 212, 212); border-top-width: 1px; border-top-style: dashed; cursor: pointer;
+}
+.menuTab p.on {
+	color: rgb(255, 0, 0); font-weight: bold;
+}
+.menuTab ul {
+	padding: 0px 0px 10px 10px; display: none;
+}
+.menuTab ul.on {
+	display: block;
+}
+.menuTab ul li {
+	line-height: 25px;
+}
+.menuTab ul li a {
+	color: rgb(187, 187, 187);
+}
+.menuTab ul li a:hover {
+	color: rgb(0, 0, 0);
+}
+.menuTab ul li.on a {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+.demo_left a {
+	padding-left: 10px; font-size: 14px;
+}
+.demo_left li {
+	
+}
+.demo_right {
+	float: left;
+}
+.demo_title {
+	background: rgb(254, 254, 254); margin: 10px 10px 0px; padding: 10px 10px 10px 20px; border: 1px solid rgb(212, 212, 212); overflow: hidden; font-size: 16px; font-weight: bold;
+}
+.demo_codemain {
+	background: rgb(255, 255, 255); padding: 20px; border: 1px solid rgb(212, 212, 212); overflow: visible;
+}
+.code .textarea {
+	background: rgb(255, 255, 255); padding: 10px; border: 1px solid rgb(212, 212, 212); width: 715px; height: 200px;
+}
+.content {
+	background: rgb(254, 254, 254); margin: 10px; padding: 20px; border: 1px solid rgb(212, 212, 212); overflow: hidden;
+}
+.code {
+	padding-top: 10px; clear: both; font-family: Verdana,"Microsoft YaHei","ËÎÌו"; margin-top: 10px;
+}
+.code ol {
+	background: rgb(244, 244, 244); padding: 0px 0px 0px 40px; border: 1px solid rgb(204, 204, 204);
+}
+.code ol li {
+	background: rgb(255, 255, 255); padding: 0px 10px; border-bottom-color: rgb(244, 244, 244); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.code ol li em {
+	color: rgb(255, 102, 0); font-weight: bold;
+}
+.code ol li i {
+	color: rgb(173, 224, 73); font-family: "Microsoft YaHei","ËÎÌו"; margin-left: 50px;
+}
+.demo_tit2 {
+	font-size: 16px; margin-bottom: 8px;
+}
+.demo_codemain .apps_main {
+	overflow: visible;
+}

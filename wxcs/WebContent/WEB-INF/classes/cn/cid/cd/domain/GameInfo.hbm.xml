@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.cid.cd.domain">
+	<class name="GameInfo" table="t_gameinfo">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="version"></property>
+		
+		<many-to-one name="style" column="style_id"/>
+		<many-to-one name="forum" column="forum_id"/>
+		
+		<property name="download_Times"/>
+		
+		<many-to-one name="minSDK" column="sdk_id"/>
+		
+		<property name="isFree"/>
+		<property name="addTime" type="timestamp"/>
+		
+		<many-to-one name="dev" column="dev_id"/>
+		
+		<many-to-one name="logo" column="logo_id"/>
+		
+		<property name="discription"/>
+		<property name="top"/>
+		<property name="foot"/>
+		
+		<bag name="images" table="game_image" inverse="false" cascade="all">
+			<key column="gameinfo_id"/>
+			<many-to-many column="image_id" class="cn.cid.cd.domain.GameImage"/>
+		</bag>
+	</class>
+</hibernate-mapping>

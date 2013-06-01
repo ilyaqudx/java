@@ -1,0 +1,732 @@
+div {
+	font-family: "SimSun", Arial, sans-serif; font-size: 12px;
+}
+p {
+	font-family: "SimSun", Arial, sans-serif; font-size: 12px;
+}
+body {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+div {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h1 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h2 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h3 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h4 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h5 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+h6 {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+form {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+input {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+p {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+th {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+td {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+img {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+ul {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+li {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+em {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+dl {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+dt {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+dd {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+ol {
+	margin: 0px; padding: 0px; font-weight: normal;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+img {
+	border: 0px currentColor;
+}
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+a {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+a:hover {
+	color: rgb(252, 69, 25);
+}
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.orangetxt {
+	color: rgb(255, 63, 28);
+}
+.bluelink {
+	color: rgb(66, 92, 158); font-family: "SimSun"; font-size: 12px;
+}
+h1 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 12px;
+}
+footer {
+	margin: 0px auto; width: 960px; display: block;
+}
+nav {
+	margin: 0px auto; width: 960px; display: block;
+}
+#totop {
+	background: url("http://zigong.wxcs.cn/web-theme/images/totop.jpg") no-repeat; width: 50px; height: 50px; right: 20px; bottom: 20px; display: none; position: fixed; z-index: 111; cursor: pointer; _position: absolute;
+}
+#totop:hover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/totop_hover.jpg") no-repeat; display: none; cursor: pointer;
+}
+.topnav {
+	background: url("http://zigong.wxcs.cn/web-theme/images/topbarleft.jpg") repeat-x; width: 100%; height: 30px; text-align: center; position: relative;
+}
+.topnav .topnavcenter {
+	background: url("http://zigong.wxcs.cn/web-theme/images/topbarcenter.jpg") no-repeat; margin: 0px auto; width: 960px; height: 30px; position: relative; z-index: 13;
+}
+.topnav .greenLine {
+	background: url("http://zigong.wxcs.cn/web-theme/images/topbarright.jpg") repeat-x; top: 0px; width: 25%; height: 30px; right: 0px; position: absolute; z-index: 10;
+}
+.topnav .tbar {
+	top: 0px; right: 0px; position: absolute;
+}
+.topnav .welcome {
+	margin: 10px 5px 0px 0px; float: right; display: inline-block;
+}
+.topnav .message {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(243, 244, 244) rgb(243, 244, 244) currentColor; margin: 5px 5px 0px 0px; padding: 5px; float: right; display: inline-block; position: relative;
+}
+.topnav .message .count {
+	background: url("http://zigong.wxcs.cn/web-theme/images/count.png") no-repeat; width: 25px; height: 13px; text-align: center; color: rgb(255, 255, 255); line-height: 13px; margin-left: 5px; display: inline-block;
+}
+.topnav .message img {
+	vertical-align: top;
+}
+.topnav .mes_more {
+	background: rgb(255, 255, 255); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(213, 213, 213) rgb(213, 213, 213) currentColor; position: relative; z-index: 100;
+}
+.topnav .mesBox {
+	background: rgb(255, 255, 255); border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(213, 213, 213) rgb(213, 213, 213); padding: 8px; top: 29px; right: 5px; position: absolute; z-index: 99; _right: 10px;
+}
+.topnav .mesBox a {
+	margin: 0px 3px;
+}
+.header {
+	margin: 0px auto; width: 960px; height: 93px; position: relative;
+}
+.header .logo {
+	background: url("http://zigong.wxcs.cn/web-theme/images/logo.png") no-repeat; width: 185px; height: 50px; margin-top: 25px; vertical-align: middle; float: left;
+}
+.header .logo a {
+	width: 185px; height: 50px; display: inline-block;
+}
+.header .logoline {
+	background: url("http://zigong.wxcs.cn/web-theme/images/logoline.jpg") no-repeat; margin: 25px 15px 0px 12px; width: 1px; height: 50px; vertical-align: middle; float: left;
+}
+.header .city_on {
+	margin-top: 32px; float: left;
+}
+.header .cityName {
+	color: rgb(254, 53, 14); font-family: "Microsoft YaHei"; font-size: 26px;
+}
+.header .weather {
+	margin: 45px 0px 0px 20px; color: rgb(85, 85, 85); font-size: 14px; float: left;
+}
+.header .weather img {
+	vertical-align: middle;
+}
+.header .searchBox {
+	background: rgb(114, 147, 231); top: 20px; width: 327px; height: 40px; right: 0px; position: absolute;
+}
+.header .searchBox .s_item {
+	background: rgb(255, 255, 255); margin: 3px; width: 260px; height: 34px; line-height: 34px; overflow: hidden; padding-left: 10px; font-size: 14px; float: left;
+}
+.header .searchBox input.sInput {
+	background: rgb(255, 255, 255); border: 0px currentColor; width: 180px; height: 26px; color: rgb(136, 136, 136); padding-left: 5px; vertical-align: middle;
+}
+.header .searchBox .sBtn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/sBtn.jpg") no-repeat; margin: 3px; border: currentColor; width: 40px; height: 33px; vertical-align: middle; cursor: pointer; _margin: 0px;
+}
+.header .searchBox .sel {
+	background: url("http://zigong.wxcs.cn/web-theme/images/s_arrow.jpg") no-repeat 35px 12px; color: rgb(91, 91, 91); padding-right: 25px; border-right-color: rgb(114, 147, 231); border-right-width: 1px; border-right-style: solid; display: inline-block; cursor: pointer;
+}
+.header .searchBox .selDown {
+	background: url("http://zigong.wxcs.cn/web-theme/images/s_arrow.jpg") no-repeat 35px 12px; color: rgb(91, 91, 91); padding-right: 25px; border-right-color: rgb(114, 147, 231); border-right-width: 1px; border-right-style: solid; display: inline-block; cursor: pointer;
+}
+.header .searchBox .selBox {
+	background: rgb(255, 255, 255); border: 1px solid rgb(114, 147, 231); left: 0px; top: 36px; width: 63px; text-align: center; clear: both; margin-left: 2px; display: none; position: absolute; z-index: 99;
+}
+.header .searchBox .selBox a {
+	color: rgb(91, 91, 91); line-height: 30px; font-size: 14px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.header .searchBox .search_tip {
+	background: rgb(249, 238, 183); padding: 6px 8px; border: 1px solid rgb(239, 196, 91); top: 6px; text-align: left; color: rgb(85, 85, 85); clear: both; font-size: 13px;
+}
+.header .searchBox .hotWordSearch {
+	margin: 7px 0px 0px 5px; clear: both;
+}
+.header .searchBox .hotWordSearch a {
+	color: rgb(66, 92, 158); margin-right: 10px;
+}
+.navBar {
+	background: url("http://zigong.wxcs.cn/web-theme/images/navbg.jpg") repeat-x; width: 100%; height: 42px; margin-bottom: 15px;
+}
+.navBar ul {
+	margin: 0px auto; width: 960px; overflow: hidden;
+}
+.navBar ul li {
+	background: url("http://zigong.wxcs.cn/web-theme/images/navline.jpg") no-repeat right top; float: left;
+}
+.navBar ul li a {
+	width: 113px; height: 42px; text-align: center; color: rgb(255, 255, 255); line-height: 42px; font-size: 16px; margin-left: -2px; display: inline-block;
+}
+.navBar ul li a:hover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/navhover.jpg") no-repeat; width: 113px; color: rgb(255, 255, 255);
+}
+.navBar ul li.nobd {
+	
+}
+.navBar ul li.nobd a:hover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/navhover.jpg") no-repeat;
+}
+.navBar ul li.navAt {
+	background: url("http://zigong.wxcs.cn/web-theme/images/navon.jpg") no-repeat;
+}
+.container {
+	margin: 0px auto; width: 960px;
+}
+.container .c_left {
+	width: 700px; float: left;
+}
+.container .c_right {
+	width: 250px; overflow: hidden; float: right;
+}
+.footer {
+	margin: 0px auto; padding: 20px 0px 30px; width: 960px; text-align: center; color: rgb(145, 145, 145); line-height: 22px; clear: both;
+}
+.footer a {
+	color: rgb(145, 145, 145);
+}
+.footer a:hover {
+	color: rgb(252, 69, 25);
+}
+.code {
+	margin-left: 5px; vertical-align: middle; display: inline-block;
+}
+.change_code {
+	color: rgb(114, 147, 231); font-size: 12px; margin-left: 5px;
+}
+.c_leftBox {
+	border: 1px solid rgb(197, 209, 238); width: 698px; overflow: hidden; margin-bottom: 15px;
+}
+.life_c1 {
+	overflow: hidden; clear: both;
+}
+.life_c2 {
+	overflow: hidden; clear: both;
+}
+.subTitle {
+	font: 16px/normal "Microsoft YaHei"; margin: 5px 5px 10px; padding: 10px 0px 10px 10px; border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid; position: relative; font-size-adjust: none; font-stretch: normal;
+}
+.grayStar {
+	background: url("http://zigong.wxcs.cn/web-theme/images/star.png") no-repeat 0px -19px; width: 10px; height: 10px; display: inline-block;
+}
+.redStar {
+	background: url("http://zigong.wxcs.cn/web-theme/images/star.png") no-repeat; width: 10px; height: 10px; display: inline-block;
+}
+.crumbNav {
+	margin: 0px auto 10px; width: 960px; color: rgb(85, 85, 85);
+}
+.pageList2 {
+	padding: 20px 0px; text-align: center; color: rgb(34, 34, 34); font-size: 14px;
+}
+.pageList2 a {
+	margin: 0px 3px; padding: 2px 6px; border: 1px solid rgb(206, 206, 206);
+}
+.pageList2 a.at {
+	background: rgb(108, 140, 223); color: rgb(255, 255, 255);
+}
+.pageList2 a:hover {
+	color: rgb(252, 69, 25);
+}
+.pageList2 input.pageIpt {
+	border: 1px solid rgb(206, 206, 206); width: 50px; height: 20px; vertical-align: middle;
+}
+.pageList2 input.pageBtn {
+	background: rgb(213, 213, 213); border: 1px solid rgb(206, 206, 206); width: 50px; height: 24px; vertical-align: middle;
+}
+.tool_article {
+	text-align: right; right: 0px; padding-top: 10px; padding-bottom: 10px; margin-right: 10px; position: relative;
+}
+.tool_article .t_comment {
+	background: url("http://zigong.wxcs.cn/web-theme/images/comments.png") no-repeat; color: rgb(136, 136, 136); padding-left: 18px; margin-bottom: 10px; margin-left: 15px; display: inline-block; cursor: pointer;
+}
+.tool_article .t_collect {
+	background: url("http://zigong.wxcs.cn/web-theme/images/comments.png") no-repeat; color: rgb(136, 136, 136); padding-left: 18px; margin-bottom: 10px; margin-left: 15px; display: inline-block; cursor: pointer;
+}
+.tool_article .t_share {
+	background: url("http://zigong.wxcs.cn/web-theme/images/comments.png") no-repeat; color: rgb(136, 136, 136); padding-left: 18px; margin-bottom: 10px; margin-left: 15px; display: inline-block; cursor: pointer;
+}
+.tool_article .t_comment:hover {
+	color: rgb(252, 69, 25);
+}
+.tool_article .t_collect:hover {
+	color: rgb(252, 69, 25);
+}
+.tool_article .t_collect {
+	background: url("http://zigong.wxcs.cn/web-theme/images/collect.png") no-repeat 0px 3px;
+}
+.tool_article .t_share {
+	background: url("http://zigong.wxcs.cn/web-theme/images/share.png") no-repeat; display: inline;
+}
+.tool_article .t_share .shareTo {
+	background: url("http://zigong.wxcs.cn/web-theme/images/139wb.png") no-repeat; top: 3px; width: 15px; height: 15px; margin-left: 5px; display: inline-block; position: relative; _top: 1px;
+}
+.tool_article .t_share .shareWeibo {
+	background: url("http://zigong.wxcs.cn/web-theme/images/weibo.png") no-repeat;
+}
+.tool_article .t_share .shareqq {
+	background: url("http://zigong.wxcs.cn/web-theme/images/qqwb.png") no-repeat;
+}
+.tool_article .t_share .shareMore {
+	background: url("http://zigong.wxcs.cn/web-theme/images/sharemore.png") no-repeat; cursor: pointer;
+}
+.tool_article .t_share .shareMoreBox {
+	border: 1px solid rgb(203, 203, 203); top: 26px; right: 1px; display: none; position: absolute;
+}
+.tool_article .t_share .shareMoreBox li {
+	background: rgb(255, 255, 255); padding: 5px 15px; border-bottom-color: rgb(203, 203, 203); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.tool_article .t_share .shareMoreBox li.nobd {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.tool_article .t_share .sharem1 {
+	background: url("http://zigong.wxcs.cn/web-theme/images/sharem1.png") no-repeat; height: 20px; line-height: 20px; padding-left: 22px; display: inline-block;
+}
+.tool_article .t_share .sharem2 {
+	background: url("http://zigong.wxcs.cn/web-theme/images/sharem2.png") no-repeat; height: 20px; line-height: 20px; padding-left: 22px; display: inline-block;
+}
+.comment_article {
+	margin: 10px;
+}
+.comment_title {
+	background: rgb(244, 244, 244); height: 30px; color: rgb(85, 85, 85); line-height: 30px; padding-left: 10px; font-size: 14px; margin-bottom: 15px;
+}
+.commnet_list li {
+	overflow: hidden; padding-bottom: 10px; clear: both; margin-top: 15px; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.comm_pic {
+	width: 50px; margin-left: 10px; float: left;
+}
+.comm_info {
+	width: 590px; margin-left: 20px; float: left;
+}
+.comm_info .comm_c1 {
+	background: rgb(242, 242, 242); padding: 5px; color: rgb(136, 136, 136); margin-bottom: 10px; position: relative;
+}
+.comm_info .comm_c1 .pb_star {
+	top: 5px; right: 5px; position: absolute;
+}
+.comm_info .comm_c1 a {
+	font-size: 14px;
+}
+.comm_info .pb_tool {
+	margin-top: 10px;
+}
+.comm_info .pb_time {
+	color: rgb(136, 136, 136);
+}
+.comm_info .pb_del {
+	background: url("http://zigong.wxcs.cn/web-theme/images/del.png") no-repeat; height: 11px; color: rgb(136, 136, 136); padding-left: 16px; margin-right: 5px; float: right; display: inline-block;
+}
+.comm_info .pb_del:hover {
+	color: rgb(252, 84, 25);
+}
+.comm_content {
+	color: rgb(85, 85, 85); line-height: 22px;
+}
+.comment_area {
+	color: rgb(85, 85, 85); font-size: 12px;
+}
+.comment_area label {
+	width: 70px; text-align: right; float: left;
+}
+.comment_c1 {
+	margin-bottom: 10px; position: relative;
+}
+.comment_c0 {
+	height: 30px; overflow: hidden; clear: both;
+}
+.comment_c0 i {
+	color: rgb(136, 136, 136); font-style: normal;
+}
+.comment_c0 span {
+	cursor: pointer;
+}
+.comm_login {
+	background: url("http://zigong.wxcs.cn/web-theme/images/commLogo.jpg") no-repeat 0px 0px; left: 120px; top: 20px; height: 70px; color: rgb(136, 136, 136); line-height: 70px; padding-left: 70px; position: absolute;
+}
+.comment_area textarea {
+	background: rgb(255, 255, 255); border: 1px solid rgb(205, 213, 233); width: 580px; height: 110px;
+}
+.comment_area input {
+	border: 1px solid rgb(205, 213, 233); width: 85px; height: 27px; vertical-align: middle;
+}
+.comment_c2 {
+	height: 50px; margin-bottom: 20px; position: relative;
+}
+.comment_area .comm_btn {
+	top: 0px; right: 25px; position: absolute;
+}
+.comment_area .comm_btn input {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat 0px -50px; font: 16px/normal "Microsoft YaHei"; border: currentColor; width: 168px; height: 37px; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+.comment_area .comm_btn input:hover {
+	background-position: -560px -50px;
+}
+.myscore h2 {
+	background: url("http://zigong.wxcs.cn/web-theme/images/s_a.jpg") no-repeat right top rgb(247, 247, 247); width: 80px; height: 40px; line-height: 40px; padding-left: 20px; font-size: 14px; float: left;
+}
+.myscore .comment_c0 {
+	padding: 12px 0px 0px 15px; width: 200px; height: 20px; clear: none; float: left;
+}
+.myscore .comment_c0 i {
+	color: rgb(252, 69, 25); line-height: 20px; font-size: 14px; margin-left: 5px; vertical-align: top; display: inline-block;
+}
+.myscore .scoreCount {
+	padding: 15px 10px 0px 0px; color: rgb(85, 85, 85); font-size: 14px; float: right;
+}
+.myscore .grayStar {
+	background: url("http://zigong.wxcs.cn/web-theme/images/star_big.png") no-repeat 0px -39px; width: 20px; height: 20px; display: inline-block;
+}
+.myscore .redStar {
+	background: url("http://zigong.wxcs.cn/web-theme/images/star_big.png") no-repeat; width: 20px; height: 20px; display: inline-block;
+}
+.appCenter_detail {
+	margin: 0px auto 15px; border: 1px solid rgb(197, 209, 238);
+}
+.appCenter_detail .appCenter_detail_left {
+	border: 1px solid rgb(197, 209, 238); width: 698px; float: left;
+}
+.appCenter_detail .appCenter_detail_right {
+	border: 1px solid rgb(197, 209, 238); width: 248px; height: 450px; float: right;
+}
+.appCenter_detail .appCenter_detail_title {
+	font: bold 14px/normal "SimSun"; margin: 15px 0px 10px 10px; color: rgb(85, 85, 85); font-size-adjust: none; font-stretch: normal;
+}
+.appCenter_detail .appCenter_detail_title .ispay {
+	background: url("http://zigong.wxcs.cn/web-theme/images/mustpay.jpg") no-repeat; width: 70px; height: 17px; margin-left: 5px; vertical-align: middle; display: inline-block;
+}
+.appCenter_detail .appCenter_detail_title .isorder {
+	background: url("http://zigong.wxcs.cn/web-theme/images/isorder.jpg") no-repeat; width: 65px; height: 17px; margin-left: 5px; vertical-align: middle; display: inline-block;
+}
+.appCenter_detail .appCenter_detail_content {
+	margin: 10px 8px 0px; width: 940px; color: rgb(85, 85, 85); position: relative;
+}
+.appCenter_detail .appCenter_detail_cover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/popbg.png"); left: 0px; top: 0px; width: 676px; height: 100%; color: rgb(85, 85, 85); position: absolute;
+}
+.pay_pop {
+	background: rgb(255, 255, 255); left: 220px; top: 100px; width: 265px; height: 135px; position: absolute;
+}
+.pay_pop_title {
+	background: rgb(114, 147, 231); height: 32px; color: rgb(255, 255, 255); line-height: 32px; padding-left: 10px; font-size: 14px;
+}
+.pay_pop_content {
+	padding: 20px 0px 0px; text-align: center;
+}
+.pay_pop_content p {
+	margin-bottom: 15px;
+}
+.pay_pop_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat 0px -430px; width: 105px; height: 34px; color: rgb(255, 255, 255); line-height: 34px; padding-left: 14px; display: inline-block;
+}
+.pay_pop_btn:hover {
+	background-position: -560px -430px; color: rgb(255, 255, 255);
+}
+.app_about_content {
+	overflow: hidden; margin-bottom: 20px;
+}
+.app_about_content h3 {
+	font: bold 14px/normal "SimSun"; color: rgb(85, 85, 85); margin-bottom: 5px; font-size-adjust: none; font-stretch: normal;
+}
+.app_about_content h3 .count_use {
+	font: 12px/normal "SimSun"; color: rgb(68, 68, 68); font-size-adjust: none; font-stretch: normal;
+}
+.app_about_content p {
+	height: 20px; color: rgb(136, 136, 136); line-height: 18px; overflow: hidden; margin-top: 5px;
+}
+.app_about_content .app_about_img {
+	width: 72px; margin-left: 10px; float: left;
+}
+.app_about_content .app_about_info {
+	width: 590px; margin-left: 10px; float: left;
+}
+.expanBox {
+	margin: 10px 0px 0px; text-align: right; overflow: hidden; clear: both;
+}
+.expan {
+	color: rgb(66, 92, 158); padding-right: 15px; display: inline-block; cursor: pointer;
+}
+.pack {
+	color: rgb(66, 92, 158); padding-right: 15px; display: inline-block; cursor: pointer;
+}
+.expan em {
+	background: url("http://zigong.wxcs.cn/web-theme/images/arrow_expan.jpg") no-repeat; left: 5px; top: 3px; width: 8px; height: 15px; display: inline-block; position: relative;
+}
+.pack em {
+	background: url("http://zigong.wxcs.cn/web-theme/images/arrow_expan.jpg") no-repeat; left: 5px; top: 3px; width: 8px; height: 15px; display: inline-block; position: relative;
+}
+.pack em {
+	background-position: 0px -18px;
+}
+.app_centerBox {
+	margin: 0px auto 15px; border: 1px solid rgb(197, 209, 238); width: 958px; overflow: hidden;
+}
+.app_centerLeft {
+	width: 700px; overflow: hidden; float: left; display: inline;
+}
+.app_centerRight {
+	width: 240px; padding-bottom: 1500px; margin-bottom: -1500px; border-left-color: rgb(235, 235, 235); border-left-width: 1px; border-left-style: solid; float: right; display: inline;
+}
+.app_cBox {
+	border: 1px solid rgb(197, 209, 238); width: 958px; margin-bottom: 15px;
+}
+.app_cBox .app_about_content .app_about_info {
+	width: 850px;
+}
+.app_cBox .appCenter_detail_cover {
+	width: 936px;
+}
+.app_cBox .pay_pop {
+	left: 320px;
+}
+.app_cBox .comm_info {
+	width: 855px;
+}
+.app_cBox .comment_area textarea {
+	width: 840px;
+}
+.new_kind_pop_win {
+	background: url("http://zigong.wxcs.cn/web-theme/images/popbg.png"); padding: 7px; left: 32%; top: 40%; width: 515px; height: 200px; overflow: hidden; display: none; position: absolute; z-index: 1000;
+}
+.new_kind_pop_win .pop_title {
+	background: rgb(114, 147, 231); height: 45px; color: rgb(255, 255, 255); line-height: 45px; padding-left: 10px; font-size: 18px;
+}
+.new_kind_pop_win .pop_close_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/pop_close.jpg") no-repeat; top: 7px; width: 48px; height: 45px; right: 7px; display: inline-block; position: absolute; cursor: pointer;
+}
+.new_kind_pop_win .popContainer {
+	background: rgb(255, 255, 255); height: 156px; overflow: hidden;
+}
+.new_kind_pop_win .life_c1 .upload_img_save {
+	left: 150px; top: 150px; position: absolute;
+}
+.app_news_two .p_span .color_red {
+	color: rgb(255, 49, 21);
+}
+.app_news_three .p_span .color_red {
+	color: rgb(255, 49, 21);
+}
+.appBox_theme {
+	left: 10px; top: 70px; position: absolute;
+}
+#regform dl {
+	margin: 5px 0px; padding: 5px 0px; width: 600px; float: left;
+}
+#regform dt {
+	width: 120px; text-align: right; padding-right: 10px; font-size: 14px; font-weight: bold; float: left; _display: inline;
+}
+#regform .must_phone {
+	background: url("http://zigong.wxcs.cn/web-theme/images/must_pic.png") no-repeat 30px;
+}
+#regform .border_top {
+	padding-top: 10px; border-top-color: rgb(220, 220, 220); border-top-width: 1px; border-top-style: dashed;
+}
+dl label {
+	height: 28px; line-height: 28px; font-size: 14px; font-weight: normal; vertical-align: middle;
+}
+#regform dd {
+	margin: 0px; float: left; position: relative;
+}
+#regform dd span {
+	float: left; position: relative;
+}
+#regform dd .choose_phone {
+	width: 220px; margin-right: 10px; float: left;
+}
+#regform dd span font {
+	color: rgb(252, 69, 25); font-size: 16px; font-weight: bold; margin-right: 10px;
+}
+#regform dd a {
+	color: rgb(66, 92, 158);
+}
+#regform dd .have_bind {
+	background: url("http://zigong.wxcs.cn/web-theme/images/right_have.png") no-repeat 0px; height: 28px; line-height: 28px; padding-left: 20px;
+}
+#regform dd .have_add {
+	background: url("http://zigong.wxcs.cn/web-theme/images/right_add.png") no-repeat 0px; height: 28px; line-height: 28px; padding-left: 20px;
+}
+.inputtext {
+	padding: 5px 4px; border: 1px solid rgb(177, 198, 214); width: 212px; height: 18px; line-height: 18px; font-size: 15px; margin-right: 10px; vertical-align: middle; float: left; _display: inline;
+}
+#regform .inputtext2 {
+	padding: 5px 4px; border: 1px solid rgb(177, 198, 214); width: 112px; height: 18px; line-height: 18px; font-size: 15px; margin-right: 10px; vertical-align: middle; float: left;
+}
+.life_c1 .upload_img_save .upload_img_save_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat 0px -649px; width: 112px; height: 35px; text-align: center; color: rgb(255, 255, 255); line-height: 35px; float: left; display: block;
+}
+.life_c1 .upload_img_save .upload_img_save_btn:hover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat -560px -649px; width: 112px; height: 35px; text-align: center; color: rgb(255, 255, 255); line-height: 35px; float: left; display: block;
+}
+.life_c1 .upload_img_save .upload_img_no_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat 0px -1287px; width: 112px; height: 35px; text-align: center; color: rgb(135, 135, 135); line-height: 35px; float: left; display: block;
+}
+.life_c1 .upload_img_save .upload_img_no_btn:hover {
+	background: url("http://zigong.wxcs.cn/web-theme/images/btnset.png") no-repeat -560px -1287px; width: 112px; height: 35px; text-align: center; color: rgb(135, 135, 135); line-height: 35px; float: left; display: block;
+}
+.life_c1 .upload_img_save .mar_ten {
+	margin-right: 10px;
+}
+.share_weibo {
+	background: url("http://zigong.wxcs.cn/web-theme/images/popbg.png"); padding: 7px; left: 32%; top: 50%; width: 515px; height: 200px; overflow: hidden; display: none; position: absolute; z-index: 1000;
+}
+.share_weibo .pop_title {
+	background: rgb(114, 147, 231); height: 45px; color: rgb(255, 255, 255); line-height: 45px; padding-left: 10px; font-size: 18px;
+}
+.share_weibo .pop_close_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/pop_close.jpg") no-repeat; top: 7px; width: 48px; height: 45px; right: 7px; display: inline-block; position: absolute; cursor: pointer;
+}
+.share_weibo .popContainer {
+	background: rgb(255, 255, 255); height: 156px; overflow: hidden;
+}
+.share_weibo .life_c1 .upload_img_save {
+	left: 150px; top: 150px; position: absolute;
+}
+.shouc_pop {
+	background: url("http://zigong.wxcs.cn/web-theme/images/popbg.png"); padding: 7px; left: 25%; top: 50%; width: 515px; height: 200px; overflow: hidden; display: none; position: absolute; z-index: 1000;
+}
+.shouc_pop .pop_title {
+	background: rgb(114, 147, 231); height: 45px; color: rgb(255, 255, 255); line-height: 45px; padding-left: 10px; font-size: 18px;
+}
+.shouc_pop .pop_close_btn {
+	background: url("http://zigong.wxcs.cn/web-theme/images/pop_close.jpg") no-repeat; top: 7px; width: 48px; height: 45px; right: 7px; display: inline-block; position: absolute; cursor: pointer;
+}
+.shouc_pop .popContainer {
+	background: rgb(255, 255, 255); height: 156px; overflow: hidden;
+}
+.shouc_pop .life_c1 .upload_img_save {
+	left: 150px; top: 150px; position: absolute;
+}
+.collect_u_sel {
+	background: rgb(255, 255, 255); border: 1px solid rgb(177, 198, 214); width: 210px; height: 27px; color: rgb(102, 102, 102); line-height: 20px; font-size: 14px; margin-left: 10px; vertical-align: middle; display: inline-block; position: relative;
+}
+.collect_u_sel pre {
+	margin: 0px;
+}
+#regform dd span.collect_u_arrow {
+	left: 179px; top: 0px; vertical-align: middle; float: left; position: absolute; cursor: pointer;
+}
+.collect_u_sel .now {
+	left: 5px; top: 5px; position: relative;
+}
+.collect_uSelList pre {
+	margin: 0px; padding: 0px;
+}
+.collect_uSelList {
+	background: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); left: 10px; top: 30px; width: 210px; height: 90px; display: none; position: absolute; z-index: 1000; -ms-overflow-y: scroll;
+}
+.collect_uSelList li {
+	padding: 5px 0px 5px 5px; color: rgb(102, 102, 102); font-size: 14px; border-bottom-color: rgb(205, 205, 205); border-bottom-width: 1px; border-bottom-style: solid; cursor: pointer;
+}
+#collect_pop {
+	overflow: visible;
+}
+.pop_c2_btn {
+	left: 240px; top: 5px; width: 100px; color: rgb(66, 92, 158); font-style: normal; position: absolute; cursor: pointer;
+}
+#collect_pop_2 input {
+	color: rgb(136, 136, 136);
+}
+#collect_pop_1 .appBox_theme {
+	position: absolute; z-index: 1000;
+}
+.appBox_theme ul li a {
+	padding: 5px; border: 1px solid rgb(223, 223, 223); width: 120px; height: 76px; display: block; position: relative;
+}
+.appBox_theme ul li a:hover {
+	padding: 5px; border: 1px solid rgb(79, 160, 41); width: 120px; height: 76px; display: block;
+}
+.appBox_theme p {
+	width: 120px; text-align: center; color: rgb(85, 85, 85); line-height: 30px; font-size: 12px;
+}
+.theme_right {
+	left: 55px; top: 35px; position: absolute;
+}
+.save_success_all {
+	left: 50%; top: 50%; display: none; position: absolute;
+}
+.save_success_bang {
+	left: 50%; top: 50%; display: none; position: absolute;
+}
+.save_success {
+	width: 250px; height: 70px; text-align: center; line-height: 25px; font-size: 12px; position: absolute; z-index: 111111; opacity: 0.5; background-color: rgb(0, 0, 0); -moz-opacity: 0.5;
+}
+.save_success_all p {
+	background: rgb(255, 255, 255); margin: 5px; width: 240px; height: 40px; text-align: center; color: rgb(0, 0, 0); padding-top: 20px; position: absolute; z-index: 1111111;
+}
+.save_success_bang p {
+	background: rgb(255, 255, 255); margin: 5px; width: 240px; height: 40px; text-align: center; color: rgb(0, 0, 0); padding-top: 20px; position: absolute; z-index: 1111111;
+}
+.save_success_all p img {
+	margin-right: 5px; vertical-align: middle;
+}
+.save_success_bang p img {
+	margin-right: 5px; vertical-align: middle;
+}
+.theme_pop_pic .theme_ul {
+	width: 620px; height: 300px; overflow: hidden; float: left;
+}
+.msgshowclass {
+	color: red; margin-left: 100px;
+}

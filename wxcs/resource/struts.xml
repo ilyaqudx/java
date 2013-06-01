@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+
+
+	<package name="default" namespace="/" extends="struts-default">
+		
+	
+		<interceptors>
+				<!--1 注册自定义的拦截器. -->
+			<interceptor name="loginCheck" class="cn.cid.cd.action.interceptor.LoginInterceptor"/>
+			
+				<!--2 注册一个拦截器栈,向里面添加单个的拦截器. -->
+			<interceptor-stack name="systemStack">
+				<interceptor-ref name="paramsPrepareParamsStack"/>
+			</interceptor-stack>
+		</interceptors>
+		
+			<!--3:将我们定义的拦截器栈,设置为默认的拦截器  -->
+		<default-interceptor-ref name="systemStack"/>
+		
+		
+		<!-- 定义全局的视图 -->
+		<global-results>
+			<result name="login" type="redirect">
+				/login.jsp
+			</result>
+			<result name="Forbidden">
+				/forbidden.jsp
+			</result>
+			<result name="error">
+				/error.jsp
+			</result>
+		</global-results>
+		
+		<!-- <global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.Exception"/>
+		</global-exception-mappings> -->
+		
+		<action name="user_*" class="cn.itcast.cd.action.UserAction" method="{1}">
+			<result name="input">
+				WEB-INF/jsp/product_editer.jsp
+			</result>
+			<result type="redirectAction">
+				user_list
+			</result>
+			<result name="list">
+				WEB-INF/jsp/product.jsp
+			</result>
+		</action>
+		
+		<action name="main" class="cn.itcast.cd.action.MainAction">
+			<result name="success">
+				WEB-INF/jsp/main.jsp
+			</result>
+		</action>
+		
+		<action name="login" class="cn.itcast.cd.action.LoginAction">
+			<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			<result name="login">
+				/login.jsp
+			</result>
+			<result type="redirectAction">
+				<param name="actionName">main</param>
+			</result>
+		</action>
+		
+		<action name="logout" class="cn.itcast.cd.action.LogoutAction">
+			<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			<result type="redirect">
+				/login.jsp
+			</result>
+		</action>
+		
+		<action name="game_*" class="cn.cid.cd.action.GameInfoAction" method="{1}">
+			<result name="input">
+				/houtai_game_add.jsp
+			</result>
+			<result name="list">
+				/houtai_game_list.jsp
+			</result>
+			<result name="save" type="redirectAction">
+				game_list
+			</result>
+			<result name="delete" type="redirectAction">
+				game_list
+			</result>
+			<result name="get">
+				/gameInfo.jsp
+			</result>
+			<result name="logo" type="redirectAction">
+				game_list
+			</result>
+		</action>
+		
+		<action name="dev_*" class="cn.cid.cd.action.DevloperAction" method="{1}">
+			<result name="input">
+				/houtai_dev_add.jsp
+			</result>
+			<result name="list">
+				/houtai_dev_list.jsp
+			</result>
+			<result name="save" type="redirectAction">
+				dev_list
+			</result>
+			<result name="delete" type="redirectAction">
+				dev_list
+			</result>
+		</action>
+		<action name="style_*" class="cn.cid.cd.action.GameStyleAction" method="{1}">
+			<result name="input">
+				/houtai_style_add.jsp
+			</result>
+			<result name="list">
+				/houtai_style_list.jsp
+			</result>
+			<result name="save" type="redirectAction">
+				style_list
+			</result>
+			<result name="delete" type="redirectAction">
+				style_list
+			</result>
+		</action>
+		<action name="sdk_*" class="cn.cid.cd.action.SDKVersionAction" method="{1}">
+			<result name="input">
+				/houtai_sdk_add.jsp
+			</result>
+			<result name="list">
+				/houtai_sdk_list.jsp
+			</result>
+			<result name="save" type="redirectAction">
+				sdk_list
+			</result>
+			<result name="delete" type="redirectAction">
+				sdk_list
+			</result>
+		</action>
+		<action name="image_*" class="cn.cid.cd.action.GameImageAction" method="{1}">
+			<result name="input">
+				/houtai_img_add.jsp
+			</result>
+			<result name="list">
+				/houtai_img_list.jsp
+			</result>
+			<result name="save">
+				/show_img.jsp
+			</result>
+			<result name="delete" type="redirectAction">
+				img_list
+			</result>
+			<result name="query">
+				/show_img.jsp
+			</result>
+		</action>
+		
+		<action name="forum_*" class="cn.cid.cd.action.ForumAction" method="{1}">
+			<result name="input">
+				/houtai_img_add.jsp
+			</result>
+			<result name="list">
+				/enjoy.jsp
+			</result>
+			<result name="save">
+				/show_img.jsp
+			</result>
+			<result name="delete" type="redirectAction">
+				img_list
+			</result>
+			<result name="hotest">
+				/show_img.jsp
+			</result>
+			<result name="childlist">
+				/page3.jsp
+			</result>
+		</action>
+	</package>
+</struts>

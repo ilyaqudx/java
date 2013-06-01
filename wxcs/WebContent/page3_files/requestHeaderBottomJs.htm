@@ -1,0 +1,745 @@
+/*JavaScript Document by zedd
+ajax全局请求设置*/
+jQuery(function(){
+	jQuery.ajaxSetup({			
+		cache: false,
+		contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+		error: function(xhr, textStatus, errorThrown) {
+			/*alert(this.type + ' url:' + this.url + '; error:' + textStatus + ';' + xhr.status);
+			alert("网络错误");*/
+			showMessageBox('',"网络繁忙，请稍候再试",'');
+			return;
+		}
+	});
+});
+
+jQuery(document).ready(function(){
+/*首页 消息*/
+jQuery(".message,.mesBox").hover(
+  function(){
+    /*jQuery(".message").addClass("mes_more");
+	jQuery(".mesBox").show();*/	
+  },
+  function(){
+    /*jQuery(".message").removeClass("mes_more");
+	jQuery(".mesBox").hide();*/	
+  }
+); 
+/*首页 搜索下拉*/
+jQuery(".sel").click(function(){
+	jQuery(".selBox").slideToggle();				
+});
+jQuery(".selBox a").click(function(){
+	jQuery(".sel").html(jQuery(this).html());
+	jQuery(".selBox").slideToggle();				
+});
+/*回顶部*/
+jQuery(window).scroll(function () {
+		if (jQuery(this).scrollTop() > 100) {
+			jQuery("#totop").show();
+		} else {
+			jQuery("#totop").hide();
+		}
+	});
+	jQuery("#totop").click(function () {
+		jQuery('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+	jQuery("#totop").css("bottom",20);
+	});
+/*详细 分享*/
+jQuery(".shareMore").click(function(){
+	jQuery(".shareMoreBox").toggle();		
+});
+	/*详细 打分*/
+ 	var jQuerystar = jQuery(".comment_c0");
+	var jQueryli = jQuerystar.find("span");
+	var jQuerystrong = jQuerystar.find("i");
+	var i = iScore = iStar = 0;
+	jQueryli.hover(function()
+	{
+		var index = jQuery(this).index();
+		curPoint(index);
+			},
+	function()
+	{
+		curPoint();
+		
+	});
+	function curPoint(pNum)
+	{
+		if(pNum){
+			iScore = pNum;
+		}else{
+			iScore = iStar;
+		}
+		jQuery("#grade").attr("value",iScore);
+		for (i = 0; i < jQueryli.length; i++) 
+		{
+			if(i < iScore){
+				jQueryli.eq(i).addClass("redStar");
+			}else{
+				jQueryli.eq(i).removeClass("redStar");
+			}
+		}
+	}
+    		jQueryli.click(function()
+    	{
+    		var index = jQuery(this).index();
+    		var sText = jQuery(this).attr("title");
+    		iStar = jQuery(this).index();
+    		jQuerystrong.text(sText);
+    	});
+    	
+	/*详细应用 展开*/
+	jQuery(".expan").click(function(){
+		jQuery(".app_about_content p").height("auto");		
+		jQuery(this).hide();
+		jQuery(".pack").show();
+	});
+	jQuery(".pack").click(function(){
+		jQuery(".app_about_content p").height(20);		
+		jQuery(this).hide();
+		jQuery(".expan").show();
+		
+	});
+	jQuery(".sharem1").click(function(){
+		jQuery("#recom_mob").show();		
+	});
+	jQuery(".pop_close_btn").click(function(){
+		jQuery("#recom_mob").hide();		
+	});
+	jQuery(".sharem2").click(function(){
+		jQuery(".share_weibo").show();		
+	});
+	jQuery(".pop_close_btn").click(function(){
+		jQuery(".share_weibo").hide();		
+	});
+	jQuery(".t_collect").click(function(){
+		jQuery(".shouc_pop").show();		
+	});
+	jQuery(".pop_close_btn").click(function(){
+		jQuery(".shouc_pop").hide();
+		jQuery(".new_kind_pop_win").hide();
+	});
+	jQuery(".collect_u_sel").click(function(){
+		jQuery(".collect_uSelList").toggle();
+	});
+	jQuery(".collect_uSelList li").click(function(){
+		jQuery(".collect_uSelList").hide();
+		jQuery(".collect_u_sel .now").html(jQuery(this).html());
+	});
+	jQuery(".pop_c2_btn").click(function(){
+		jQuery("#errorMsg").html("");
+    	jQuery("#errorMsgDiv").hide();
+    	jQuery("#successMsg").html("");
+    	jQuery("#successMsgDiv").hide();
+		jQuery("#collect_pop_1").hide();
+		jQuery("#collect_pop_2").show();
+	});
+	jQuery("#share_mobile_close").click(function(){
+		jQuery("#recom_mob").hide();		
+	});
+	jQuery("#share_email_close").click(function(){
+		jQuery(".share_weibo").hide();		
+	});
+	jQuery("#collectWin").click(function(){
+		jQuery("#collect_pop_2").hide();
+		jQuery("#collect_pop_1").hide();	
+	});
+	jQuery("#categoryWin").click(function(){
+		jQuery("#collect_pop_2").hide();
+		jQuery("#collect_pop_1").show();	
+	});
+	
+	
+});  
+function closeWin(id,type) {
+	if(type=="class"){
+		jQuery("." + id).hide(); 
+	}else{
+		jQuery("#" + id).hide(); 
+	}
+	 
+}
+
+	
+	function usercancel(){
+	    /*if(confirm("你确定要退出登录吗？")){*/
+		  jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebCancelAcountSuccess.do?jsoncallback=?",{areaCode:'510300',forwardURL:'',areaName:'zigong'},function(data){
+		    document.cookie = "nickName=;domain=.wxcs.cn;path=/";
+			document.cookie = "mobile=;domain=.wxcs.cn;path=/";
+			document.cookie = "email=;domain=.wxcs.cn;path=/";
+			document.cookie = "userLogo=;domain=.wxcs.cn;path=/";
+			var url = "http://zigong.wxcs.cn";
+			if(data.status== '0'){
+				window.location.href = "http://zigong.wxcs.cn/bcp-server/ajax/cleanCookieAndJump.do?backurl="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+			} else {
+				window.close();
+			}
+		  });
+		/*}*/
+    }
+	function headdl(){
+		var url = document.location.href;
+		location.href="https://ac.wxcs.cn/login?backURL="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+	}
+    jQuery(function(){
+		jQuery("#keyWord").live("click",function(){
+    		jQuery("#keyWord").attr("value","");
+    	});
+    	jQuery(".searchBox .hotWordSearch a").bind("click",function(){
+    		location.href = "http://zigong.wxcs.cn/pub/websearchhaskey?searchKey=" + jQuery(this).html() + "&searchType=0";
+    		function stopDefault( e ) { 
+    	     if ( e && e.preventDefault ) 
+    	        e.preventDefault(); 
+    	    else 
+    	        window.event.returnValue = false; 
+    	    return false; 
+    		} 
+    	});
+    });
+    
+    search = function() {
+    	var keyWord = document.getElementById("keyWord").value;
+    	var searchType = document.getElementById("searchType").value;
+    	var url = "";
+    	if (null == keyWord || "" == keyWord) {
+    		url = "http://zigong.wxcs.cn/pub/webecityhotrecommend";
+    	} else {
+    		var searchType = document.getElementById("searchType").value;
+    		url = "http://zigong.wxcs.cn/pub/websearchhaskey?searchKey=" + keyWord + "&searchType=" + searchType;
+    	}
+    	
+    	location.href = url;
+    }
+    
+    selType = function(val) {
+    	document.getElementById("searchType").value = val;
+    }
+
+    /* 鼠标离开事件*/ 
+    jQuery(function(){
+    	/* 鼠标离开事件*/
+    	var dd = document.getElementById('divSel');
+        if (! +'\v1') {/*ie*/
+            dd.onmouseleave = function(){dd.style.display = 'none';};
+        }else {/*others*/
+    		dd.onmouseover = function(e) {
+                var t = e.relatedTarget;
+        　　　　      if(!t || (!(t.compareDocumentPosition(this) & 8) &&  t !== this)){
+        　　　　      }
+            };
+            dd.onmouseout = function(e) {
+      			var t = e.relatedTarget;
+    　　　　		if(!t || (!(t.compareDocumentPosition(this) & 8) &&  t !== this)){
+    				dd.style.display = 'none';
+    　　　　		}
+            };
+        }
+    });
+	
+	function showMessageBox(qxa,tipTitle,aclick){ 
+        		jQuery("#tipTitle").html(tipTitle);  
+        		jQuery('#xyqda').unbind("click");
+        		jQuery("#xyqda").click(function(){closeTsLogout();});
+        		jQuery("#xyqda").attr("style","margin-left:60px;");
+        		jQuery("#xyqxa").hide(); 
+				
+         		jQuery("#wwwMessageBox").show().css({"zIndex":"9999","position":"absolute"});
+         		var winWidth=jQuery(document.body).width();
+         		var winHeight=jQuery(window).height();
+         		var bHeight=jQuery(document.body).height();
+         		var windowHeight = document.documentElement.clientHeight; 
+         		jQuery(".popCover").css("height",windowHeight);
+         		jQuery(".popCover").css("width",winWidth);
+         		jQuery(".popCover").show();
+         		centerLogout(jQuery("#wwwMessageBox"));
+         		jQuery(window).scroll(function(){
+         		 centerLogout(jQuery("#wwwMessageBox"));
+        		 });
+         		jQuery(window).resize(function(){
+         		 centerLogout(jQuery("#wwwMessageBox"));
+         		}); 
+        	}
+        	    
+	/*订阅*/
+    function dingyuebutton(resCode){  
+    	 /*判断用户是否登录*/
+    				var url = document.location.href;
+    		location.href = "https://ac.wxcs.cn/login?backURL="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+		    }
+ 
+	/*验证码*/
+	function swithCode(id){
+       jQuery("#"+id).attr("src","http://zigong.wxcs.cn/bcp-server/ajax/admin/captcha?value="+new Date().getTime());
+	}
+           	/*if(0=="1")*/
+			function showPhone(){
+				swithCode("picCodeIdSMS");
+				jQuery("#emailId").val("");
+				jQuery("#imageCode2").val("");
+				jQuery(".share_weibo").show();	
+				jQuery("#recom_mob").hide();
+				jQuery("#msgshow1").hide();
+				jQuery("#msgshow2").hide();
+			}
+			
+			function showMail(){
+				swithCode("picCodeIdEmail");
+				jQuery("#emailId").val("");
+				jQuery("#imageCode2").val("");
+				jQuery(".share_weibo").show();	
+				jQuery("#recom_mob").hide();
+				jQuery("#msgshow1").hide();
+				jQuery("#msgshow2").hide();
+	}
+			
+        function forword(title){
+			var resCode = "";
+    		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/requestCheckLoginStatus.do?jsoncallback=?",{areaCode:'510300'},function(data){
+        		var status = data.status;  
+        	       if(status == '0'){
+        	          if ("recom_mob" == title) {
+            		    var resName= jQuery("#resName").val();
+            			var account = jQuery("#regMob").val();
+            			var imgCode = jQuery("#imageCode1").val(); 
+            			var URL = window.location.href;
+            			if(account == null || account =="" || account == undefined ||account=="请输入好友手机号"){
+            				jQuery("#msgshow1").html("请输入手机号");
+            				jQuery("#msgshow1").show();
+            				return;
+            			} 
+						
+						jQuery.ajax({
+                			url:"http://zigong.wxcs.cn/bcp-server/ajax/checkIsChinaMobile.do?jsoncallback=?",
+                			type:"post",
+                			data:{mobileNum:account},
+                			async: false,/*async:false 同步请求*/
+                			dataType:"json",
+                			success:function (data){
+                				if(data.status == "0"){/*是移动手机号码*/
+                					if(imgCode == null || imgCode =="" || imgCode == undefined ||imgCode=="验证码" ){
+                        				jQuery("#msgshow1").html("请输入验证码");
+                        				jQuery("#msgshow1").show();
+                        				return;
+                        			} 
+                        			jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/requestForwardByPhone.do?jsoncallback=?",{phoneId:account,imageCode:imgCode,resName:resName,URL:URL,resCode:resCode,areaCode:'510300'},function (data){
+                        				var status = data.status;
+                        				if(status == '0'){
+                        				    jQuery("#recom_mob").hide();   
+                        					showTipByshare(data.detail,"短信分享");
+                        				}else{
+                        					jQuery("#recom_mob").hide();
+            								showTipByshare2(data.detail,"短信分享");
+                        				}
+                        			});
+            						calc(2);
+                				} else {
+                					jQuery("#msgshow1").html("仅支持移动手机号，换个号码试试");
+                    				jQuery("#msgshow1").show();
+                    				return;
+                				}
+                			}
+                		});/*end ajax*/ 
+    				  } else if ("recom_ema" == title) {
+    				  	var resName= jQuery("#resName").val();
+                		var account = jQuery("#emailId").val();
+                		var imgCode = jQuery("#imageCode2").val(); 
+                		var URL = window.location.href;
+                		if(account == null || account =="" || account == undefined ||account=="请输入好友邮箱地址"){
+                			jQuery("#msgshow2").html("请输入邮箱地址");
+                			jQuery("#msgshow2").show();
+                			return;
+                		}
+						
+						jQuery.ajax({
+                    		url:"http://zigong.wxcs.cn/bcp-server/ajax/checkIsRightEmail.do?jsoncallback=?",
+                    		type:"post",
+                    		data:{email:account},
+                    		async: false,/*async:false 同步请求*/
+                    		dataType:"json",
+                    		success:function (data){ 
+                    			if(data.status == "0"){/*正确的邮箱地址*/
+                    				if(imgCode == null || imgCode =="" || imgCode == undefined ||imgCode=="验证码" ){
+                            			jQuery("#msgshow2").html("请输入验证码");
+                            			jQuery("#msgshow2").show();
+                            			return;
+                            		}
+                            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/requestForwardByEmail.do?jsoncallback=?",{emailId:account,imageCode:imgCode,resName:resName,URL:URL,resCode:resCode,areaCode:'510300'},function(data){
+                            			var status = data.status;
+                            			if(status == '0'){
+                            			    jQuery(".share_weibo").hide(); 
+                            				showTipByshare(data.detail,"邮件分享");
+                            			}else{
+            								jQuery(".share_weibo").hide();
+            								showTipByshare2(data.detail,"邮件分享");
+                            			}
+                            		});
+            						calc(2);
+                    			} else {
+                    				jQuery("#msgshow2").html("邮箱格式有误，请重新输入");
+                        			jQuery("#msgshow2").show();
+                        			return;
+                    			}
+                    		}
+                    	});
+    				  }
+        	       } else {
+        	         jQuery("#recom_mob").hide();
+					 jQuery(".share_weibo").hide();
+    				 showTipByshare2(data.detail,"分享");
+        	      }
+    		}); 
+        }
+    	/*end*/
+	 	/*判断移动号码*/
+	var mobFlag = true;
+	function isNotMobile(param){
+		jQuery.ajax({
+			url:"http://zigong.wxcs.cn/bcp-server/ajax/checkIsChinaMobile.do?jsoncallback=?",
+			type:"post",
+			data:{mobileNum:param},
+			async: false,/*async:false 同步请求*/
+			dataType:"json",
+			success:function (data){
+				if(data.status == "0"){/*是移动手机号码*/
+					mobFlag = false;
+				} else {
+					mobFlag = true;
+				}
+			}
+		});/*end ajax*/ 
+		return mobFlag;
+   	}
+    function isEmail(param){
+   		if(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(param)){
+   			return true;
+       	} else {
+       		return false;
+       	}
+    }
+    
+    var emlFlag = true;
+    function isNotEmail(param){
+    	jQuery.ajax({
+    		url:"http://zigong.wxcs.cn/bcp-server/ajax/checkIsRightEmail.do?jsoncallback=?",
+    		type:"post",
+    		data:{email:param},
+    		async: false,/*async:false 同步请求*/
+    		dataType:"json",
+    		success:function (data){ 
+    			if(data.status == "0"){/*正确的邮箱地址*/
+    				emlFlag = false;
+    			} else {
+    				emlFlag = true;
+    			}
+    		}
+    	});
+    	return emlFlag; 
+    }
+	
+	function calc(a){
+		if(a>0){a--;setTimeout("calc("+a+")",1000)}else{jQuery("#share_tip").hide()}
+	}
+	
+	function showTipByshare(param,title){
+   		jQuery("#share_tip").show();
+	    jQuery("#shareResult").html("<img src='http://zigong.wxcs.cn/images/right_have.png'>"+param);
+		calc(2);
+	}
+	function showTipByshare2(param,title){
+   		jQuery("#share_tip").show();
+	    jQuery("#shareResult").html("<img src='http://zigong.wxcs.cn/images/right_have.png'>"+param);
+		calc(2);
+	}
+	
+	 /*139分享链接*/
+    function fxhref(app_text,resCode,share_pic,columnId){
+    var areaCode = "510300";
+    var share_url;
+    jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/webGetAppDisplayMode.do?jsoncallback=?", {resCode:resCode,areaCode:'510300',columnId:columnId}, function(data) {
+    	share_url = data.url;
+    	if("null"!=share_url){/*是否是有效资源*/
+    	    /*var flag="0"; 
+    	    if(flag == '1'){ 登录后才可分享  */
+    		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/shareWeiboAddlog.do?jsoncallback=?", {resCode:resCode,resName:app_text,areaCode:'510300'}, function(data) {});
+    		  share_pic=encodeURI(share_pic);
+    		  share_url=encodeURI(share_url);
+    		  app_text=encodeURI(app_text); 
+    		 /* window.location="http://app.weibo.10086.cn/apps/share/share.php?app_key=41983ad63636374e431694461b4fec24&share_id=10733&remmend_uids=&share_pic="+share_pic+"&share_video=&share_url="+share_url+"&app_text="+app_text+"&app_link="+share_url;*/
+    		  var url139="http://app.weibo.10086.cn/apps/share/share.php?app_key=41983ad63636374e431694461b4fec24&share_id=10733&remmend_uids=&share_pic="+share_pic+"&share_video=&share_url="+share_url+"&app_text="+app_text+"&app_link="+share_url;
+    		  window.open(url139,'转播到移动微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+    	    /*}else{
+    		  跳转至登录页面
+				var url = document.location.href;
+    			location.href = "https://ac.wxcs.cn/login?backURL="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+    	    }*/
+        }else{
+    	    alert("无效应用资源，无法分享");
+        }
+     });
+    }
+    
+    /*腾讯微博分享*/
+    function qqfxhref(resName,resCode,share_pic,columnId){
+        var areaCode = "510300";
+    	var share_url;
+    	jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/webGetAppDisplayMode.do?jsoncallback=?", {resCode:resCode,areaCode:'510300',columnId:columnId}, function(data) {
+    		 share_url = data.url;
+    	     if("null"!=share_url){
+    			 jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/shareWeiboAddlog.do?jsoncallback=?", {resCode:resCode,resName:resName,areaCode:'510300'}, function(data) {});
+    			 var _t = encodeURI(resName);
+    			 var _url = encodeURI(share_url);
+    			 var _appkey = '333cf198acc94876a684d043a6b48e14';
+    			 var _site = encodeURI;
+    			 var _pic = encodeURI(share_pic);
+    			 var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic;
+    			 window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+    		  }else{
+    			 alert("无效应用资源，无法分享");
+    		  }
+    	 });
+    } 
+    /*新浪微博分享*/
+    function sinafxhref(resName,resCode,share_pic,columnId){
+        var areaCode = "510300";
+    	var share_url; 
+    	
+    	jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/webGetAppDisplayMode.do?jsoncallback=?", {resCode:resCode,areaCode:'510300',columnId:columnId}, function(data) {
+    	     share_url = data.url;
+    	     if("null"!=share_url){
+    			 jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/shareWeiboAddlog.do?jsoncallback=?", {resCode:resCode,resName:resName,areaCode:'510300'}, function(data) {});
+    	         var _t = encodeURI(resName);
+    			 var _url = encodeURI(share_url);
+    			 var _appkey = '333cf198acc94876a684d043a6b48e14';
+    			 var _site = encodeURI;
+    			 var _pic = encodeURI(share_pic); 
+    			 var _u = 'http://v.t.sina.com.cn/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic;
+    			 window.open( _u,'转播到新浪微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+    		 }else{
+    		    alert("无效应用资源，无法分享");
+    		 }
+    	});
+    }  
+
+	 /*退出*/
+	 function userlogout(){
+	    /*if(confirm("你确定要退出登录吗？")){*/
+		  jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebCancelAcountSuccess.do?jsoncallback=?",{areaCode:'510300',forwardURL:'',areaName:'zigong'},function(data){
+			if(data.status== '0'){
+				document.cookie = "nickName=;domain=.wxcs.cn;path=/";
+				document.cookie = "mobile=;domain=.wxcs.cn;path=/";
+				document.cookie = "email=;domain=.wxcs.cn;path=/";
+				document.cookie = "userLogo=;domain=.wxcs.cn;path=/"; 
+				var url = "http://zigong.wxcs.cn/index";
+				window.location.href = "http://zigong.wxcs.cn/bcp-server/ajax/cleanCookieAndJump.do?backurl="+encodeURIComponent(url);
+			} else {
+				/*alert("退出失败，关闭浏览器清理缓存！");*/
+				window.close();
+			}
+		  });
+		/*}*/
+	}
+	/*弹出层*/
+	function showVmLogout(){
+ 		jQuery("#wwwLogout").show().css({"zIndex":"9999","position":"absolute"});
+ 		centerLogout(jQuery("#wwwLogout"));
+ 		jQuery(window).scroll(function(){
+ 		 centerLogout(jQuery("#wwwLogout"));
+		 });
+ 		jQuery(window).resize(function(){
+ 		 centerLogout(jQuery("#wwwLogout"));
+ 		}); 
+	}
+
+	function centerLogout(obj){
+   		 var windowWidth = document.documentElement.clientWidth;   
+  		 var windowHeight = document.documentElement.clientHeight;   
+   
+   		var popupHeight =obj.height();   
+   		var popupWidth =obj.width();    
+   
+  		obj.css({
+   			 "top": (windowHeight-popupHeight-200)/2+$(document).scrollTop()+130,   
+   			 "left": (windowWidth-popupWidth)/2   
+   		});  
+	}
+
+ 
+
+ 	/*让层居中隐藏*/
+	function closeTsLogout(){
+   		jQuery("#wwwLogout").hide();
+		jQuery("#wwwMessageBox").hide();
+    	jQuery(window).unbind();
+	}
+	
+	/*底部*/ 
+	
+	var page = jQuery("#nowPage").val();
+    var pages =jQuery("#pages").val();
+    var nodeType = jQuery("#nodeType").val();
+	var pageSize = jQuery("#pageSize").val();
+    		              jQuery(function(){
+            	/*首页跳转*/
+            	jQuery(".pageList2 #firstPage").bind("click",function(){
+            		page = 1;
+            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:page,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+                	     jQuery(".commnet_list ul").html(data.res);
+                    	 page = data.nowPage;
+                    	 pages = data.pages;
+                    	 nodeType = data.nodeType;
+                    	 jQuery("#nowPage").html(data.nowPage);
+    					 });
+            	});
+            	/*上一页*/
+            	jQuery(".pageList2 #previousPage").bind("click",function(){
+            		if(page == "" || page == "undefined")
+            		{
+            			page = 1;
+            		}else{
+            			page = parseInt(page);
+            		}
+            		if(page>1){
+            			page = page - 1;
+            		}else{
+            			page = 1;
+            		}
+            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:page,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+                	   jQuery(".commnet_list ul").html(data.res);
+                	   page = data.nowPage;
+                	   pages = data.pages;
+                	   nodeType = data.nodeType;
+                	   jQuery("#nowPage").html(data.nowPage);
+            	});
+            	});
+            	/*下一页*/
+            	jQuery(".pageList2 #nextPage").bind("click",function(){
+            	    var vPages = 0;
+            		if(pages != "undefined" && pages != "")
+            		{
+            			vPages = parseInt(pages);
+            		}else{
+    					vPages = 1;
+    				}
+            		if(page == "" || page == "undefined")
+            		{
+            			page = 1;
+            		}else{
+            			page = parseInt(page);
+            		}
+            		if(vPages > page){
+            			if(page == "")
+            			{
+            				page = "1";
+            			}
+            			page = parseInt(page) + 1;
+            		}
+            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:page,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+                	   jQuery(".commnet_list ul").html(data.res);
+                	   page = data.nowPage;
+                	   pages = data.pages;
+                	   nodeType = data.nodeType;
+                	   jQuery("#nowPage").html(data.nowPage);
+            	});
+            	});
+            	/*最后一页*/
+            	jQuery(".pageList2 #lastPage").bind("click",function(){
+            		page = pages;
+            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:page,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+                	   jQuery(".commnet_list ul").html(data.res);
+                	   page = data.nowPage;
+                	   pages = data.pages;
+                	   nodeType = data.nodeType;
+                	   jQuery("#nowPage").html(data.nowPage);
+            	});
+            	});
+            	/*输入页码跳转*/
+            	jQuery("#jump").bind("click",function(){
+            		var pageIpt = document.getElementById("pageIpt");
+            		var numberReg = /^[0-9]+$/;
+                	var value = pageIpt.value;
+                	if(!numberReg.test(value) || value <= 0){
+                		alert("请输入正整数!");
+                		return;
+                	}
+            		var vPages = pages +"";
+            		if(vPages != "" && vPages != "undefined")
+            		{
+            			pages = parseInt(vPages);
+            		}
+            		else
+            		{
+            			pages = 1;
+            		}
+            		if(parseInt(value) > pages){
+                		alert("不能大于最大页数!");
+                		return;
+                	}
+            		page = pageIpt.value;
+            		jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:page,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+                	   jQuery(".commnet_list ul").html(data.res);
+                	   page = data.nowPage;
+                	   pages = data.pages;
+                	   nodeType = data.nodeType;
+                	   jQuery("#nowPage").html(data.nowPage);
+            		});
+            	});
+            	/*页面加载时加载数据*/
+            	jQuery.getJSON("http://zigong.wxcs.cn/bcp-server/ajax/reqWebComment.do?jsoncallback=?",{page:1,areaCode:"510300",resCode:"",pageSize:pageSize,nodeType:nodeType},function(data){
+            		jQuery(".commnet_list ul").html(data.res);
+            		page = data.nowPage;
+            	    pages = data.pages;
+            		nodeType = data.nodeType;
+            		jQuery("#nowPage").html(data.nowPage);
+            	});
+            });
+			/*尾部输入框限制*/
+            	if (("0" != "0") && ("0" != ""))
+            	{
+            		jQuery(".comment_c1 textarea").removeAttr("disabled");
+            		jQuery("#subCommnet").removeAttr("disabled");
+            		jQuery(".comment_c1 .comm_login").attr("style","display:none");
+            	}else
+            	{
+            		jQuery(".comment_c1 textarea").attr("disabled","disabled");
+            		jQuery(".comment_c1 .comm_login").attr("style","display:block");
+            		jQuery("#subCommnet").attr("disabled","disabled");
+            	}
+		  		  function jsTrim(str) 
+        	{
+        		return str.replace(/(^\s*)|(\s*$)/g,"");
+        	}
+            function getLength(text) 
+            {
+            	var strLength = 0;
+            	var txt = text.value;
+            	var index = 0;
+            	for ( var n = 0; n < txt.length; n++) 
+            	{
+            		var strCode = txt.charCodeAt(n);
+            		if (strCode > 256)
+            		{	
+            			strLength = strLength + 3;
+            		}
+            		else
+            		{
+            			strLength = strLength + 1;
+            		}
+            	}
+            	return strLength;
+            }
+		              /*登陆*/
+       function toLogin()
+       {
+			var url = document.location.href;
+			location.href="https://ac.wxcs.cn/login?backURL="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+       }
+	   /*注册*/
+	   function toRegister()
+       {
+			var url = document.location.href;
+			location.href="https://ac.wxcs.cn/register?backURL="+encodeURIComponent(url)+"&areaName=zigong&jumpType=1";
+       }
