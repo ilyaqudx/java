@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/ListView" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   		android:text="ListView"
+        />
+    <Button 
+        android:id="@+id/ScrollView"
+        android:layout_below="@id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   		android:text="scrollView"
+        />
+    <Button 
+        android:id="@+id/Intent"
+        android:layout_below="@id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   		android:text="Intent"
+        />
+
+</RelativeLayout>

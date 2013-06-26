@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="活动中心"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/setup_back_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_btn_selector"
+        android:text="返回"
+        android:textColor="@android:color/white" />
+    -->
+
+
+    <!-- android:layout_below="@id/title" -->
+   
+    
+    
+            <TextView
+                android:id="@+id/title_huodong_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+             	android:background="@drawable/title_bg_picture"
+                android:gravity="center"
+                android:text="活动中心"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+           <!--  <Button
+                android:layout_margin="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_filter_backbutton_pressed"
+                android:textColor="@android:color/white" /> -->
+
+    <ListView
+        android:id="@+id/listView_hasBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_huodong_center" >
+    </ListView>
+
+</RelativeLayout>
